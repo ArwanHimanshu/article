@@ -91,7 +91,7 @@ export const getArticle = (req = {}) => async (dispatch) => {
   const notification_context = "Get article";
   try {
     const payload = await axios.get("api/article", req);
-    debugger;
+
     if (payload.data.error) {
       notification.error({
         message: notification_context,
