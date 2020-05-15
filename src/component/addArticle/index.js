@@ -83,7 +83,6 @@ const AddComponent = (props) => {
               <ReactQuill
                 value={description}
                 onChange={(value, delta, source, editor) => {
-                  console.log(value, delta, source, editor);
                   setDescription(editor.getHTML());
                 }}
               ></ReactQuill>
